@@ -36,12 +36,12 @@ task-management/
 
 
 4. Create a `.env` file in `backend/`:
-   DATABASE_URL=postgresql+psycopg://postgres:yourpassword@localhost:5432/taskdb
+   DATABASE_URL=postgresql+psycopg://username:password@host:port/database_name
    
    SECRET_KEY=your-secret-key
 
 
-6. Make sure PostgreSQL is running and `taskdb` database exists.
+6. Make sure PostgreSQL is running and database exists.
 
 7. Run the server:
    uvicorn src.main:app --reload --port 8000
