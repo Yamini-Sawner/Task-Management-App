@@ -26,7 +26,7 @@ task-management/
    cd backend
 
    
-3. Create a virtual environment and activate it:
+2. Create a virtual environment and activate it:
    
    python -m venv venv
    
@@ -35,21 +35,21 @@ task-management/
    source venv/bin/activate # Mac/Linux
 
 
-5. Install dependencies:
+3. Install dependencies:
    
    pip install -r requirements.txt
 
 
-7. Create a `.env` file in `backend/`:
+4. Create a `.env` file in `backend/`:
    
    DATABASE_URL=postgresql+psycopg://username:password@host:port/database_name
    
    SECRET_KEY=your-secret-key
 
 
-9. Make sure PostgreSQL is running and database exists.
+5. Make sure PostgreSQL is running and database exists.
 
-10. Run the server:
+6. Run the server:
     
    uvicorn src.main:app --reload --port 8000
     
@@ -63,17 +63,15 @@ task-management/
    cd frontend
 
 
-3. Install dependencies:
+2. Install dependencies:
    
    npm install
 
 
-5. Create a `.env` file in `frontend/`:
-   
-   VITE_API_URL=http://localhost:8000
+3. Create a `.env` file in `frontend/`:
 
 
-7. Run the dev server:
+4. Run the dev server:
    
    npm run dev
    
