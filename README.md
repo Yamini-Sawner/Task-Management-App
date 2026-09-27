@@ -6,6 +6,7 @@ A full-stack task management app — React frontend, FastAPI backend, PostgreSQL
 
 task-management/
 ├── backend/ # FastAPI REST API (PyCharm project)
+
 └── frontend/ # React + Vite app (VS Code project)
 
 
@@ -36,12 +37,13 @@ task-management/
 
 4. Create a `.env` file in `backend/`:
    DATABASE_URL=postgresql+psycopg://postgres:yourpassword@localhost:5432/taskdb
+   
    SECRET_KEY=your-secret-key
 
 
-5. Make sure PostgreSQL is running and `taskdb` database exists.
+6. Make sure PostgreSQL is running and `taskdb` database exists.
 
-6. Run the server:
+7. Run the server:
    uvicorn src.main:app --reload --port 8000
     
    API runs at `http://localhost:8000`
@@ -63,6 +65,7 @@ task-management/
 
 4. Run the dev server:
    npm run dev
+   
    App runs at `http://localhost:5173`
 
 
